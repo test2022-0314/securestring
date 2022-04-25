@@ -28,4 +28,4 @@ jobs:
       # Runs a single command using the runners shell
       - name: test
         shell: pwsh
-        run: echo 'hello'
+        run: echo 'hello' | ConvertTo-SecureString -AsPlainText -Force | ConvertFrom-SecureString
